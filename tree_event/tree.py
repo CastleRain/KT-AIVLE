@@ -136,20 +136,19 @@ Django over time: API stability | Release notes and upgrading instructions | Dep
 # text string 사용
 
 
-tree_mask = np.array(Image.open('Tree_white.png'))
+tree_mask = np.array(Image.open('tree_event/img/Tree_white.png'))
 image_colors = ImageColorGenerator(tree_mask)
 
 
 wc1 = WordCloud(max_font_size=30, mask = tree_mask,mode = "RGBA",
-                background_color="white", width=800, height=800
+                background_color="black", width=800, height=800
                 , repeat=True)
 wc1.generate(text)
 
 wc1.recolor(color_func = image_colors)
 
 plt.figure(figsize=(10, 8))
-ax = plt.gca()
-ax.set_facecolor('m')
+
 plt.imshow(wc1)
 
 plt.tight_layout(pad=0)
