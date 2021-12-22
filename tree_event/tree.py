@@ -23,7 +23,8 @@ from konlpy.tag import Okt
 3) https://castlerain.tistory.com/25
 
 """
-file = open("KT_AIVLE.txt", "r", encoding="UTF-8") 
+
+file = open("tree_event/blog/KT_AIVLE.txt", "r", encoding="UTF-8") 
 file_txt = file.read()
 file.close()
 
@@ -50,25 +51,25 @@ for i,v in enumerate(file_txt_noun):
 해당 데이터마다 KT AIVLE을 추가 하고 싶었지만 결과 그림에 더 크게 나오게 하고 싶어서 update를 통해 추가 진행을 해주었다.
 
 """
-remove_word = ['에이', '블', '스쿨']
+remove_word = ['에이', '블', '스쿨', '블러']
 
 for re_w in remove_word:
     del(ko_noun_txt[re_w])
 
-ko_noun_txt.update({'KT AIVLE' : 200, "Merry Christmas" : 190})
-
+ko_noun_txt.update({'KT AIVLE' : 40, "Merry Christmas" : 40})
+print(ko_noun_txt)
 
 # 3. word cloud 진행
 
 ## 3.1 나무 모양을 위한 이미지 가져오기
 
-tree_mask = np.array(Image.open('tree_event/img/Tree_white5.png'))
+tree_mask = np.array(Image.open('tree_event/img/Tree_white7.png'))
 image_colors = ImageColorGenerator(tree_mask)
 
 
 ### font_size는 100이상은 다 비슷한것 같다.
 
-tree_wc = WordCloud(max_font_size=200, 
+tree_wc = WordCloud(max_font_size=100, 
                     mask = tree_mask,mode = "RGBA", 
                     background_color="#143338",
                     width=1000, 
