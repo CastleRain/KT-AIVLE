@@ -57,7 +57,6 @@ for re_w in remove_word:
     del(ko_noun_txt[re_w])
 
 ko_noun_txt.update({'KT AIVLE' : 40, "Merry Christmas" : 40})
-print(ko_noun_txt)
 
 # 3. word cloud 진행
 
