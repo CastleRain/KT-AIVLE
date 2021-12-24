@@ -31,8 +31,8 @@
         echo "<TD>",$row['mobile2'],"</TD>";
         echo "<TD>",$row['height'],"</TD>";
         echo "<TD>",$row['mDate'],"</TD>";
-        echo "<TD>","<a href='update.php?userID=",$row['userID'],">수정</a></TD>";
-        echo "<TD>","<a href='delete.php?userID=",$row['userID'],">삭제</a></TD>";
+        echo "<TD>","<a href='update.php?userID=",$row['userID'],"'>수정</a></TD>";
+        echo "<TD>","<a href='delete.php?userID=",$row['userID'],"'>삭제</a></TD>";
 
     }
 
