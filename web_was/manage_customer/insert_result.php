@@ -10,7 +10,7 @@
     $height = $_POST["height"];   
     $mDate = date("Y-m-j");
    
-    $sql =" INSERT INTO userTbl VALUES('".$userID ."','".$birthYear"';
+    $sql =" INSERT INTO userTBL VALUES('".$userID."','".$birthYear;
     $sql = $sql.",'".$addr."','".$mobile1."','".$mobile2."',".$height.",'".$mDate."')";
    
     $ret = mysqli_query($con, $sql);
