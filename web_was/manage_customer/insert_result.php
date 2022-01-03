@@ -9,8 +9,16 @@
     $height = $_POST["height"];
     $mDate = date("Y-m-j");
     
-    $sql ="INSERT INTO userTBL VALUES('".$userID."','".$name."',".$birthYear;
-    $sql = $sql.",'".$addr."','".$mobile1."','".$mobile2."',".$height.",'".$mDate."')";
+    $sql ="INSERT INTO userTBL VALUES(
+        '".$userID."',
+        '".$name."',
+        '".$birthYear."',
+        '".$addr."',
+        '".$mobile1."',
+        '".$mobile2."',
+        '".$height."',
+        '".$mDate."'
+    )";
 
     $ret = mysqli_query($con, $sql);
     echo "<h1> 신규 회원 입력 결과 </h1>";
