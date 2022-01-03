@@ -1,3 +1,5 @@
-21-12-22 ~ 21-12-24
+# KT AIVLE
 
-KT AIVLE WEB/WAS/DB 교육
+## Date : 21.12.24 ~ 21.12.24
+
+* Study WEB WAS
